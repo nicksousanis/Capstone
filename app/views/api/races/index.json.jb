@@ -1,0 +1,6 @@
+@races.map do |race| {
+  name: race.name,
+  type: race.race_type,
+  date: race.date,
+  city: race.city.city,
+} end

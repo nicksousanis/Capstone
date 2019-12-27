@@ -1,0 +1,8 @@
+@racewatchlist.map do |race| {
+  id: race.user_id,
+  name: race.race.name,
+  type: race.race.race_type,
+  date: race.race.date,
+  city: race.race.city.city,
+  time: race.result_time,
+} end

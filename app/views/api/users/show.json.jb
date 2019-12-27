@@ -1,0 +1,9 @@
+{ id: @user.id,
+ name: @user.name,
+ email: @user.email,
+ picture: @user.profile_picture,
+ city: @user.city.city,
+ completed_5k: @user.completed_5k,
+ completed_10k: @user.completed_10k,
+ completed_marathon: @user.completed_marathon,
+ badges: @user.badges }
