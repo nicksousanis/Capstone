@@ -1,0 +1,5 @@
+@posts.map do |post| {
+  post: post.post,
+  user: post.user.name,
+  city: post.city.city,
+} end
