@@ -1,1 +1,2 @@
-{ id: @workout }
+{ user_id: @workout.user_id,
+ workout_time: @workout.workout_time }
