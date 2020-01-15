@@ -1,6 +1,8 @@
 @races.map do |race| {
+  id: race.id,
   name: race.name,
   type: race.race_type,
   date: race.date,
   city: race.city.city,
+# isWatched: current_user.is_watching_race(race),
 } end

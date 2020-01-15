@@ -1,0 +1,3 @@
+{ id: @racewatchlist.user_id,
+ race_id: @racewatchlist.race_id,
+ name: @racewatchlist.race.name }
