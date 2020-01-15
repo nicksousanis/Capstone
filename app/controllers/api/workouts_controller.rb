@@ -12,7 +12,7 @@ class Api::WorkoutsController < ApplicationController
   def create
     @workout = Workout.new(
       user_id: params[:user_id],
-      workout_time: params[:race_id],
+      workout_time: params[:workout_time],
     )
     @workout.save
     render "show.json.jb"
