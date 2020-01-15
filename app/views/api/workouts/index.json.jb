@@ -1,0 +1,3 @@
+@workouts.map do |workout| {
+  id: workout.user_id,
+} end

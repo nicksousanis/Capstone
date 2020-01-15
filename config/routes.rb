@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
 
+    get "/workouts" => "workouts#index"
     get "/workouts" => "workouts#show"
+    post "/workouts" => "workouts#create"
   end
 end

@@ -35,10 +35,10 @@ Comment.create!(comment: "This is the second comment!", post_id: 1, user_id: 2)
 Comment.create!(comment: "This is the third comment!", post_id: 1, user_id: 3)
 Comment.create!(comment: "This is the first comment!", post_id: 2, user_id: 4)
 
-Workout.create!(distance: 3.2, user_id: 1)
-Workout.create!(distance: 5.2, user_id: 2)
-Workout.create!(distance: 2, user_id: 3)
-Workout.create!(distance: 1.75, user_id: 4)
+Workout.create!(distance: 3.2, user_id: 1, workout_time: "00:07:00")
+Workout.create!(distance: 5.2, user_id: 2, workout_time: "00:05:50")
+Workout.create!(distance: 2, user_id: 3, workout_time: "00:16:23")
+Workout.create!(distance: 1.75, user_id: 4, workout_time: "00:25:41")
 
 Coordinate.create!(Latitude: 10.25232, Longitude: 9.9234934, workout_id: 1)
 

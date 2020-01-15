@@ -100,6 +100,7 @@ ActiveRecord::Schema.define(version: 2019_12_20_011029) do
   create_table "workouts", force: :cascade do |t|
     t.decimal "distance", precision: 5, scale: 2
     t.integer "user_id"
+    t.time "workout_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
