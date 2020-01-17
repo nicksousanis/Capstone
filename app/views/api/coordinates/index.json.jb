@@ -1,4 +1,4 @@
 @coordinates.map do |coordinate| {
-  latitude: coordinate.latitude,
-  longitude: coordinate.longitude,
+  latitude: coordinate.Latitude,
+  longitude: coordinate.Longitude,
 } end
