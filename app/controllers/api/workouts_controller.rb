@@ -26,14 +26,17 @@ class Api::WorkoutsController < ApplicationController
     #   )
     #   index += 1
     # end
-    # data = params[:locations].map do |location|
-    #   {
-    #     workout_id: @workout.id,
-    #     latitude: location.coords.latitude,
-    #     longitude: location.coords.longitude,
-    #   }
-    # end
-    # Coordinate.create(data)
+    data = params[:locations].map do |location|
+      {
+        workout_id: @workout.id,
+        latitude: location["coords"]["latitude"],
+        longitude: location["coords"]["longitude"],
+      }
+    end
+    puts "-" * 50
+    pp data
+    puts "-" * 50
+    Coordinate.create(data)
     render "show.json.jb"
   end
 end
