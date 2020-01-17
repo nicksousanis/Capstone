@@ -14,5 +14,7 @@ Rails.application.routes.draw do
     get "/workouts" => "workouts#index"
     get "/workouts" => "workouts#show"
     post "/workouts" => "workouts#create"
+
+    get "/coordinates" => "coordinates#index"
   end
 end

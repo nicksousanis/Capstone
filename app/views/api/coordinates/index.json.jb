@@ -1,0 +1,4 @@
+@coordinates.map do |coordinate| {
+  latitude: coordinate.latitude,
+  longitude: coordinate.longitude,
+} end
