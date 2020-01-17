@@ -1,7 +1,7 @@
 class Api::WorkoutsController < ApplicationController
   def index
     @workouts = Workout.all
-    render "index.json.jb"
+    render "show.json.jb"
   end
 
   def show
@@ -16,6 +16,11 @@ class Api::WorkoutsController < ApplicationController
       distance: params[:distance],
     )
     @workout.save
+    # loop through params[:locations] (an array of hashes)
+    @test = params[:locations].map do |location|
+      { latitude: location.coords.latitude,
+       longitude: location.coords.longitude }
+    end
     render "show.json.jb"
   end
 end
