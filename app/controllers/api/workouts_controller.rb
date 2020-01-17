@@ -17,13 +17,14 @@ class Api::WorkoutsController < ApplicationController
     )
     @workout.save
     # loop through params[:locations] (an array of hashes)
-    @test = params[:locations].map do |location|
-      Coordinate.new(
-        workout_id: 1,
+    data = params[:locations].map do |location|
+      {
+        workout_id: @workout.id,
         latitude: location.coords.latitude,
         longitude: location.coords.longitude,
-      )
+      }
     end
+    Coordinate.create(data)
     render "show.json.jb"
   end
 end
