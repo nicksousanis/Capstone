@@ -21,7 +21,9 @@ class Api::WorkoutsController < ApplicationController
       Coordinate.new(
         workout_id: 1,
         latitude: location.coords.latitude,
-        longitude: location.coords.longitude)
+        longitude: location.coords.longitude,
+      )
+    end
     render "show.json.jb"
   end
 end
