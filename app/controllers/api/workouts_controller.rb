@@ -29,8 +29,8 @@ class Api::WorkoutsController < ApplicationController
     data = params[:locations].map do |location|
       {
         workout_id: @workout.id,
-        latitude: location["coords"]["latitude"],
-        longitude: location["coords"]["longitude"],
+        Latitude: location["coords"]["latitude"],
+        Longitude: location["coords"]["longitude"],
       }
     end
     puts "-" * 50
