@@ -1,4 +1,5 @@
 @coordinates.map do |coordinate| {
+  user_id: coordinate.user_id,
   latitude: coordinate.Latitude,
   longitude: coordinate.Longitude,
 } end
