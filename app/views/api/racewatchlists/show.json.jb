@@ -1,4 +1,4 @@
 { id: @racewatchlist.user_id,
  race_id: @racewatchlist.race_id,
- name: @racewatchlist.race.name,
- watchlist_id: @watchlist.id }
+ name: @racewatchlist.race.name, }
+ 
