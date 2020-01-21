@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     get "/racewatchlists" => "racewatchlists#index"
     post "/racewatchlists" => "racewatchlists#create"
+    delete "/racewatchlists/:id" => "racewatchlists#destroy"
 
     get "/posts" => "posts#index"
 

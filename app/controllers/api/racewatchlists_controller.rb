@@ -13,4 +13,9 @@ class Api::RacewatchlistsController < ApplicationController
     @racewatchlist.save
     render "show.json.jb"
   end
+
+  def destroy
+    @racewatchlist = RaceWatchlist.find_by(id: params[:id])
+    @racewatchlist.destroy
+  end
 end
