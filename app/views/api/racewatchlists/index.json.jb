@@ -6,4 +6,5 @@
   city: race.race.city.city,
   time: race.result_time,
   race_id: race.race_id,
+  watchlist_id: race.id,
 } end
