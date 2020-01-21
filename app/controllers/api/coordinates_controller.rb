@@ -8,4 +8,12 @@ class Api::CoordinatesController < ApplicationController
     @coordinate = Coordinate.find_by(id: params[:id])
     render "show.json.jb"
   end
+
+  def create
+    workout = Workout.create(
+      workout_id: params[:workout_id],
+      Latitude: params[:latitude],
+      Longitude: params[:longitude],
+    )
+  end
 end
