@@ -10,5 +10,6 @@ class Api::ShoesController < ApplicationController
       user_id: 1,
       distance: 0,
     )
+    render "show.json.jb"
   end
 end
