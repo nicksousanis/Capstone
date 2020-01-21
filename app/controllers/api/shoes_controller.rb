@@ -5,7 +5,7 @@ class Api::ShoesController < ApplicationController
   end
 
   def create
-    @shoe = Show.create(
+    @shoe = Shoe.create(
       name: params[:name],
       user_id: 1,
       distance: 0,
