@@ -1,0 +1,6 @@
+@shoes.map do |shoe| {
+  id: shoe.id,
+  name: shoe.name,
+  user_id: shoe.user_id,
+  distance: shoe.distance,
+} end

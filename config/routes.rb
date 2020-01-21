@@ -20,5 +20,8 @@ Rails.application.routes.draw do
     get "/coordinates" => "coordinates#index"
     get "/coordinates/:id" => "coordinates#show"
     post "/coordinates" => "coordinates#create"
+
+    get "/shoes" => "shoes#index"
+    post "/shoes" => "shoes#create"
   end
 end
