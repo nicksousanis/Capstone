@@ -39,4 +39,9 @@ class Api::WorkoutsController < ApplicationController
     Coordinate.create(data)
     render "show.json.jb"
   end
+
+  def destroy
+    @workout = Workout.find_by(id: params[:id])
+    @workout.destroy
+  end
 end
