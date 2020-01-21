@@ -1,0 +1,3 @@
+{ workout_id: @coordinate.workout_id,
+ latitude: @coordinate.Latitude,
+ longitude: @coordinate.Longitude }
