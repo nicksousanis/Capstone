@@ -10,7 +10,7 @@ class Api::CoordinatesController < ApplicationController
   end
 
   def create
-    workout = Workout.create(
+    workout = Coordinate.create(
       workout_id: params[:workout_id],
       Latitude: params[:latitude],
       Longitude: params[:longitude],
