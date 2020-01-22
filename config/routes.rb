@@ -23,6 +23,6 @@ Rails.application.routes.draw do
 
     get "/shoes" => "shoes#index"
     post "/shoes" => "shoes#create"
-    patch "/shoes" => "shoes#update"
+    patch "/shoes/:id" => "shoes#update"
   end
 end
