@@ -12,4 +12,10 @@ class Api::ShoesController < ApplicationController
     )
     render "show.json.jb"
   end
+
+  def update
+    @shoe = Shoe.find_by(id: params[:id])
+    @shoe.distance = params[:distance]
+    @shoe.save
+  end
 end
