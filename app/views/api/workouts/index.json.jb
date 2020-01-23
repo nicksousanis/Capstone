@@ -3,5 +3,5 @@
   user_id: workout.user_id,
   distance: workout.distance,
   # workout_time: "#{workout.workout_time.hour} hour(s) #{workout.workout_time.min} minute(s) #{workout.workout_time.sec} second(s)",
-  workout_time: workout_time,
+  workout_time: workout.workout_time,
 } end
