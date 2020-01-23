@@ -50,14 +50,14 @@ Comment.create!(comment: "This is the third comment!", post_id: 1, user_id: 3)
 Comment.create!(comment: "This is the first comment!", post_id: 2, user_id: 4)
 
 Workout.create!(distance: 1.0, user_id: 1, workout_time: "00:07:00")
-Workout.create!(distance: 5.2, user_id: 2, workout_time: "00:05:50")
+Workout.create!(distance: 0.7, user_id: 1, workout_time: "00:05:50")
 Workout.create!(distance: 2, user_id: 3, workout_time: "00:16:23")
 Workout.create!(distance: 1.75, user_id: 4, workout_time: "00:25:41")
 
 Coordinate.create!(Latitude: 41.8921, Longitude: -87.6348, workout_id: 1)
 Coordinate.create!(Latitude: 41.8921, Longitude: -87.6353, workout_id: 1)
 Coordinate.create!(Latitude: 41.8922, Longitude: -87.6360, workout_id: 1)
-Coordinate.create!(Latitude: 41.8929, Longitude: -87.6199, workout_id: 1)
+
 Coordinate.create!(Latitude: 41.8925, Longitude: -87.6349, workout_id: 1)
 Coordinate.create!(Latitude: 41.8921, Longitude: -87.6346, workout_id: 1)
 Coordinate.create!(Latitude: 41.8944, Longitude: -87.6237, workout_id: 2)
